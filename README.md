@@ -1,10 +1,8 @@
 # Bài tập Bài 6–8 — PHP MVC, bảo mật và Fetch API
 
 **Học phần:** Lập trình Web  
-**Sinh viên thực hiện:** **Bùi Thị Hồng Hà** — bài làm cá nhân; thực hiện cả phần yêu cầu cá nhân và phần yêu cầu “nhóm” của slide.  
+**Sinh viên thực hiện:** **Bùi Thị Hồng Hà** — bài làm cá nhân.  
 **Đề tài áp dụng:** Hệ thống bán hàng trực tuyến mini **Bếp Nhà Hà Store**.
-
-> Repository này hoàn thiện các bài tập thực hành và bài tập về nhà tại slide **Bài 6, Bài 7 và Bài 8** của tài liệu `Bai 6_8 MVC_baomat.pdf`.
 
 ![Cấu trúc thư mục](assets/project-structure.png)
 
