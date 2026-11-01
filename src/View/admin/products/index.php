@@ -1,0 +1,6 @@
+<?php $title = 'Quản trị sản phẩm'; require dirname(__DIR__, 2) . '/layout/header.php'; ?>
+<section class="card"><div class="row" style="justify-content:space-between"><h1>Quản trị sản phẩm</h1><a class="button" href="<?= url('admin/products/create') ?>">+ Thêm sản phẩm</a></div>
+<div style="overflow:auto"><table><thead><tr><th>ID</th><th>SKU</th><th>Tên</th><th>Danh mục</th><th>Tồn</th><th>Trạng thái</th><th>Thao tác</th></tr></thead><tbody>
+<?php foreach ($products as $product): ?><tr><td><?= (int)$product['id'] ?></td><td><?= e($product['product_code']) ?></td><td><?= e($product['name']) ?></td><td><?= e($product['category_name']) ?></td><td><?= (int)$product['stock_quantity'] ?></td><td><?= $product['is_published'] ? 'Mở bán' : 'Ẩn' ?></td><td class="actions"><a class="button" href="<?= url('admin/products/edit',['id'=>$product['id']]) ?>">Sửa</a><form method="post" action="<?= url('admin/products/delete') ?>" onsubmit="return confirm('Xóa sản phẩm này?')"><input type="hidden" name="csrf" value="<?= e(\App\Core\Auth::csrfToken()) ?>"><input type="hidden" name="id" value="<?= (int)$product['id'] ?>"><button class="danger">Xóa</button></form></td></tr><?php endforeach; ?>
+</tbody></table></div></section>
+<?php require dirname(__DIR__, 2) . '/layout/footer.php'; ?>

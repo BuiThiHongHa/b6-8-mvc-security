@@ -1,0 +1,1 @@
+<?php $title='403 Không có quyền'; require dirname(__DIR__) . '/layout/header.php'; ?><section class="card"><h1>403 — Bạn không có quyền truy cập</h1><p>Server đã chặn request này bằng role guard, không chỉ ẩn nút giao diện.</p><a class="button" href="<?= url('products') ?>">Về thực đơn</a></section><?php require dirname(__DIR__) . '/layout/footer.php'; ?>

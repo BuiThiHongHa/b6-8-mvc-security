@@ -1,0 +1,1 @@
+<?php $title='419 CSRF không hợp lệ'; require dirname(__DIR__) . '/layout/header.php'; ?><section class="card"><h1>419 — CSRF token không hợp lệ</h1><p>Thao tác thay đổi dữ liệu đã bị từ chối để bảo vệ phiên đăng nhập.</p><a class="button" href="<?= url('products') ?>">Quay lại</a></section><?php require dirname(__DIR__) . '/layout/footer.php'; ?>
