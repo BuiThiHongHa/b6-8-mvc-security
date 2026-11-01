@@ -121,4 +121,3 @@ Bài làm cá nhân nên **Bùi Thị Hồng Hà** phụ trách toàn bộ: `Pro
 
 - Kiểm tra cú pháp: `find . -path './vendor' -prune -o -name '*.php' -type f -print0 | xargs -0 -n1 php -l`.
 - Kết quả kiểm thử chức năng chi tiết: [`TEST_CHECKLIST.md`](TEST_CHECKLIST.md).
-- Kịch bản slide/demo báo cáo: [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md).
